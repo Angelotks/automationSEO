@@ -1,0 +1,19 @@
+# .gitignore
+
+# Dependencias
+/node_modules
+
+# Logs
+*.log
+
+# Variables de entorno
+.env
+
+# Sistema específico del SO
+.DS_Store
+
+# Carpeta de construcción
+/dist
+
+# Archivos temporales
+*.tmp
