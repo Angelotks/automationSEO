@@ -1,7 +1,3 @@
-Un archivo `README.md` bien estructurado puede hacer que tu proyecto sea mucho más fácil de entender y de usar. Aquí tienes un ejemplo de cómo podrías estructurar el README de tu proyecto:
-
----
-
 # Mi Proyecto de Automatización con Node.js
 
 Este proyecto incluye tres scripts de automatización para trabajar con URLs:
@@ -12,7 +8,7 @@ Este proyecto incluye tres scripts de automatización para trabajar con URLs:
 
 ## Prerrequisitos
 
-- Node.js v14.x o superior
+- Node.js v18.16.0 o superior
 - Puppeteer
 
 ## Instalación
@@ -33,6 +29,16 @@ npm install
 
 ## Uso
 
+## Archivos de Entrada
+
+Cada script utiliza un archivo de texto en la carpeta `dependencies` que contiene una lista de URLs para procesar.
+
+- `urlFriendly.txt` para `friendlyUrl.js`
+- `urlMetarobots.txt` para `metaRobots.js`
+- `urlCanonical.txt` para `canonicalHref.js`
+
+Asegúrate de que estos archivos estén actualizados con las URLs que deseas analizar.
+
 ### Obtener FriendlyURLs a través de Liferay
 
 ```bash
@@ -50,13 +56,3 @@ node metaRobots.js
 ```bash
 node canonicalHref.js
 ```
-
-## Archivos de Entrada
-
-Cada script utiliza un archivo de texto en la carpeta `dependencies` que contiene una lista de URLs para procesar.
-
-- `urlFriendly.txt` para `friendlyUrl.js`
-- `urlMetarobots.txt` para `metaRobots.js`
-- `urlCanonical.txt` para `canonicalHref.js`
-
-Asegúrate de que estos archivos estén actualizados con las URLs que deseas analizar.
